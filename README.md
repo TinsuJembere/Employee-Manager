@@ -1,6 +1,7 @@
 # Employee Manager
 
 A full-stack employee management system with user authentication and newsletter subscription functionality.
+you can watch it live on https://employee-manager-beryl.vercel.app/
 
 ## Features
 
