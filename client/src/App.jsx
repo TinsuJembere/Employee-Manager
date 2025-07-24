@@ -9,7 +9,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import Home from "./pages/Home";
 import AddEmployeePage from "./pages/AddEmployee";
 import EmployeeDirectoryPage from "./pages/EmployeeDirectory";
-import LoginPage from "./pages/Login";
+import LoginPage from "./pages/login";
 import RegisterPage from "./pages/Register";
 import EditEmployee from "./pages/EditEmployee";
 import NotFound from "./pages/NotFound";

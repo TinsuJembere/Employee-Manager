@@ -21,7 +21,7 @@ export const AuthProvider = ({ children }) => {
       try {
         const token = localStorage.getItem('token');
         if (token) {
-          const response = await axios.get(`${API_BASE_URL}/auth/me`, {
+          const response = await axios.get(`https://employee-manager-dtxf.onrender.com/auth/me`, {
             headers: {
               Authorization: `Bearer ${token}`,
             },
@@ -45,7 +45,7 @@ export const AuthProvider = ({ children }) => {
   const login = async (email, password) => {
     try {
       setError(null);
-      const response = await axios.post(`${API_BASE_URL}/auth/login`, { email, password }, {
+      const response = await axios.post(`https://employee-manager-dtxf.onrender.com/api/auth/login`, { email, password }, {
         withCredentials: true // Important for sending/receiving cookies
       });
 
@@ -75,7 +75,7 @@ export const AuthProvider = ({ children }) => {
   const register = async (userData) => {
     try {
       setError(null);
-      const response = await axios.post(`${API_BASE_URL}/auth/register`, userData, {
+      const response = await axios.post(`https://employee-manager-dtxf.onrender.com/api/auth/register`, userData, {
         withCredentials: true // Important for sending/receiving cookies
       });
       
@@ -103,7 +103,7 @@ export const AuthProvider = ({ children }) => {
 
   const logout = async () => {
     try {
-      // Optional: await axios.post(`${API_BASE_URL}/auth/logout`);
+      // Optional: await axios.post(`https://employee-manager-dtxf.onrender.com/auth/logout`);
     } catch (error) {
       console.error('Logout error:', error);
     } finally {

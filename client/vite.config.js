@@ -9,7 +9,7 @@ export default defineConfig({
     proxy: {
       // Proxy API requests to the backend server
       '/api': {
-        target: 'http://localhost:5000',
+        target: 'https://employee-manager-dtxf.onrender.com',
         changeOrigin: true,
         secure: false,
         ws: true,
